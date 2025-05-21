@@ -11,7 +11,7 @@ const envPath = path.join(__dirname, '..', '.env');
 if (!fs.existsSync(envPath)) {
   const random = generateRandomString(16);
   const envContent = `# Database connection string
-# To transfer this DB to your Neon account follow the link http://localhost:30000/mit?role=neon_owner&mit=mit-${random}
+# To transfer this DB to your Neon account follow the link http://localhost:30000/mit?role=neondb_owner&mit=mit-${random}
 DATABASE_URL="postgresql://neondb_owner:${random}@mit-${random}.localtest.me:4432/neondb?sslmode=require"
 `;
 
